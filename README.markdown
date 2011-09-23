@@ -3,7 +3,7 @@
 > TAFEE (_pronounced: taffy_): tiered, adaptive front-end experiences. 
 > Customizing the experience to the unique capabilities of each browser, prioritizing a fast and good UX over consistency.
 
-Full credit to @paulirish & @SlexAxton for coining `TAFEE`. Paul Irish eloquently explains the concept of [Tiered, Adaptive Front-end Experiences](http://paulirish.com/2011/tiered-adaptive-front-end-experiences/).
+Full credit to [@paulirish](https://github.com/paulirish) & [@SlexAxton](https://github.com/SlexAxton) for coining `TAFEE`. Paul Irish eloquently explains the concept of [Tiered, Adaptive Front-end Experiences](http://paulirish.com/2011/tiered-adaptive-front-end-experiences/).
 
 I've brashly poached the acronym for this project as it hits the nail on the head for what I'm attempting to build.
 
@@ -18,5 +18,5 @@ I'll be experimenting on the [GitHub Pages Branch](https://github.com/chrisjacob
 
 ## Demo
 
-http://chrisjacob.github.com/TAFEE/
+http://chrisjacob.github.com/TAFEE
 
