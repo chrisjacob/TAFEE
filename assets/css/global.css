@@ -1,12 +1,7 @@
-/* global.src.less */
-/* global.var.less */
-/*
-Responsive.less
-Source: https://github.com/paulmist/responsive.less
-Author: Paul Mist
-Twitter: @paulmist
-*/
 /* global.less */
+/* global.var.less */
+/* responsive.less */
+/* global.src.less */
 body {
   background-color: #ff6666;
 }

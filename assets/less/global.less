@@ -1,17 +1,5 @@
 /* global.less */
 
-body {
-	background-color: lighten(@color, 20%);
-}
+@import 'global.var';
 
-#mode {
-	content: @mode;
-}
-
-#mode-list li {
-	display: none;
-	
-	&.global {
-		display: block;
-	}
-}
+@import 'global.src';
