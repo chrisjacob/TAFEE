@@ -1,6 +1,12 @@
 <!DOCTYPE html>
-<!-- HTML5Boilerplate v2.0: https://github.com/paulirish/html5-boilerplate/blob/b23de068c5a3cafe2dc642d095221245e578af34/index.html -->
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!-- 
+	HTML5Boilerplate v2.0
+	https://github.com/paulirish/html5-boilerplate/blob/b23de068c5a3cafe2dc642d095221245e578af34/index.html 
+-->
+<!-- 
+	Conditional stylesheets vs CSS hacks? Answer: Neither!
+	paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ 
+-->
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
@@ -8,45 +14,49 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<!-- Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/b/378 -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-
 	<title>TAFEE - Boilerplate for Tiered, Adaptive Front-end Experiences</title>
 	<meta name="description" content="TAFEE (pronounced: taffy): tiered, adaptive front-end experiences. Customizing the experience to the unique capabilities of each browser, prioritizing a fast and good UX over consistency.">
 	<meta name="author" content="Chris Jacob">
 	<!-- 
 		Full credit to @paulirish & @SlexAxton for coining TAFEE. 
-		Paul Irish eloquently explains the concept here: http://paulirish.com/2011/tiered-adaptive-front-end-experiences/
+		Paul Irish eloquently explains the concept here
+		http://paulirish.com/2011/tiered-adaptive-front-end-experiences/
+	-->	
+	
+	<!-- 
+		Use the .htaccess and remove these lines to avoid edge case issues. More info: h5bp.com/b/378 
 	-->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- 
+		Mobile viewport optimized: j.mp/bplateviewport 
+	-->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 	<!-- 
-		Determine user experience: mobile, basic, advanced or customized.
+		Determine user experience: basic, advanced or custom.
 		Feature detect, apply classes to <head>, and load CSS/LESS styles.
 		All other JavaScript at bottom the bottom of the page
 	-->
-	<script src="assets/js/_initialize.min.js"></script>
-
-	<!-- Provide the BASIC styling to no-js visitors (assuming most likely to be desktop browsers without js)-->
+	<script src="assets/js/head.js"></script>
 	<noscript>
-		<link rel="stylesheet" href="assets/css/basic.min.css">
+		<link rel="stylesheet" href="assets/css/basic.css">
 	</noscript>
 
 	<!-- 
 		favicon.ico and apple-touch-icon.png's in the root directory
 		However, also hardcoding links here to support Android: mathiasbynens.be/notes/touch-icons 
 	-->
-	<!-- For iPhone 4 with high-resolution Retina display: -->
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
-	<!-- For first-generation iPad: -->
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
-	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
 	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
-	<!-- http://www.sitemaps.org/protocol.php -->
+	<!-- 
+		http://www.sitemaps.org/protocol.php 
+	-->
 	<link rel="sitemap" type="application/xml" href="sitemap.xml">
-	<!-- http://humanstxt.org/ -->
+	<!-- 
+		http://humanstxt.org/ 
+	-->
 	<link rel="author" type="text/plain" href="humans.txt">
 	
 <!-- 
@@ -57,90 +67,106 @@ TODO:
 -->
 </head>
 
-<!-- http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/ -->
-<!-- Id and Class attributes prepended with "c" for Controller and "a" for Action to "namespace" these dynamic strings -->
+<!-- 
+	Markup-based unobtrusive comprehensive DOM-ready execution
+	http://paulirish.com/2009/markup-based-unobtrusive-comprehensive-dom-ready-execution/
+	
+	Edit: Id and Class attributes prepended with "c" for Controller and "a" for Action to "namespace" these dynamic strings 
+-->
 <body id="cController" class="aAction" data-controller="controller" data-action="action">
 	
-	<!-- 
-		Markup taken from Golden Grid System demo http://goldengridsystem.com/
-		Planning to implement this folding grid for responsive design.
-	-->
-  <div id="container">
-    <header>
-      <div class="wrapper">
-        <h1>
-          A Demonstration
-        </h1>
-        <h2>
-          Try resizing your browser or viewing this page on different devices. Use the icon in the upper right corner to see an overlay of the grid.
-        </h2>
-      </div>
-    </header>
-    <article id="twoway">
-      <section class="wrapper">
-        <h3>
-          A two-way split
-        </h3>
-        <p>
-          These two blocks of text will float side by side with some empty columns on the sides on large screens. On medium-sized screens the empty columns will disappear, and on small screens the blocks will be stacked vertically.
-        </p>
-				<p>
-					<!-- 
-						Considering "Lazy Loading" image assets e.g. like JAIL.js but more lightweight - in particular removing the dependency on jQuery
-						https://github.com/sebarmeli/JAIL
-						
-						The <i> tag is used as a CSS "hook", it also provides us with a lot of control as a container for the image (e.g. i {overflow: hidden;} )
-						It's a non-semantic use of the <I> element - but it's short to type, easy to remember, and renders alt text nicely when images are turned off
-						http://html5doctor.com/i-b-em-strong-element/ 
-					-->
-					<i class="image"><img class="lazy w240 w720 w1024" data-src="apple-touch-icon-114x114-precomposed.png" data-alt="Apple Touch Icon 114x114 Precomposed" data-width="114" data-height="114"><noscript><img src="apple-touch-icon-114x114-precomposed.png" alt="Apple Touch Icon 114x114 Precomposed"></noscript></i>
-				</p>
-      </section>
-      <section class="wrapper">
-        <h3>
-          By the way
-        </h3>
-        <p>
-          If you're viewing this page on an iOS device, it might zoom in wonkily when you rotate your device. This is because of <a href="http://filamentgroup.com/examples/iosScaleBug/">a Mobile Safari bug</a>.
-        </p>
-				<!-- 
-					Going to investigate taking UX to another level "Customtized".
-					Looking to use less.js to JIT compile CSS and override the defaults set in advanced.defaults.min.css
-					e.g. an iPhone user forces a "desktop site" version (say 1200px), which actually recompiles the CSS to ignore the "true" media queries
-					More simply "cusomized" UX's may just come down to custom "theming" of a page... but the possibilities are endless.
-				-->
-        <h3>
-          Set styles like a BOSS... change background color.
-        </h3>
-        <form id="options" action="" method="post">
-          <input id="option-color" name="color" type="text" value="pink">
-          <button id="option-submit">Submit</button>
-        </form>
-      </section>
-    </article>
-  </div><!--! #container -->
-  
-  <div id="prompt" class="info">
+	<div id="container">
+		<header>
+			<!-- 
+				Considering "Lazy Loading" image assets e.g. like JAIL.js but more lightweight
+				https://github.com/sebarmeli/JAIL
+				
+				The <i> element is used as a JS & CSS "hook" and provides a handy overflow container
+				It also renders image "alt" text in italics - which I quite like
+				Kinda semantic? http://html5doctor.com/i-b-em-strong-element/ 
+			-->
+			<i class="ri" data-src="logo-TAFEE.png" data-alt="TAFEE"><noscript><img src="logo-TAFEE.png" alt="TAFEE"></noscript></i>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div id="main" role="main">
+			<article>
+				<header>
+					<h1>TAFEE - Boilerplate for Tiered, Adaptive Front-end Experiences</h1>
+					<p>Customizing the experience to the unique capabilities of each browser, prioritizing a fast and good UX over consistency.</p>
+				</header>
+				<section>
+					<h2>An example please...</h2>
+					<p>This page shows several techniques in use:</p>
+					<ol>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+					</ol>
+					
+					<h2>Mode</h2>
+					<p id="mode">...insert mode from LESS...</p>
+					<ol id="mode-list">
+						<li class="global">Global</li>
+						<li class="basic">Basic</li>
+						<li class="advanced">Advanced</li>
+						<li class="custom">Custom</li>
+					</ol>
+					<h2>Find out more</h2>
+					<p>Download the source on <a href="#">GitHub</a>.	
+				</section>
+				<footer>
+					<h4>Comments</h4>
+					<div class="comment">
+						<p>This is a sample comment</p>
+					</div>
+				</footer>
+			</article>
+			<aside>
+				<section>
+					<h5>About</h5>
+					<p>This is some copy about the project.</p>
+				</section>
+			</aside>
+		</div>
+		
+		<footer>
+			<h5>Settings</h5>
+			<form id="settings" action="" method="get">
+				<label for="settings-color">Color:</label>
+				<input id="settings-color" name="color" type="text" value="pink">
+				<button id="btn-submit">Submit</button>
+			</form>
+		</footer>
+	</div>
+	
+	<div id="prompt" class="info">
 		<noscript>
 			<p>
 				Please enable JavaScript...
 			</p>
 		</noscript>
 	</div>
-  
-  <!-- JavaScript at the bottom for fast page loading -->
-  
-  <!-- 
-		The DOM is loaded and ready for action. Time to conditionally download, parse and execute some scripts...
-		Also might defer load HTML snippets for Advanced UX... remember we're working Mobile First. 
- 	-->
-  <script src="assets/js/_finalize.js"></script>
 
-  <!-- Prompt IE 6/7/8 users to install Google Chrome Frame.
-       chromium.org/developers/how-tos/chrome-frame-getting-started -->
-  <!--[if lt IE 9 ]>
-    <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
+	<!-- 
+		The DOM is loaded and ready for action. Time to conditionally download, parse and execute some scripts...
+		Keep in initial load lean. Defer load JS / HTML... remember we're working Mobile First. 
+	-->
+	<script src="assets/js/body.js"></script>
+
+	<!-- 
+		Prompt IE 6/7/8 users to install Google Chrome Frame.
+		chromium.org/developers/how-tos/chrome-frame-getting-started 
+	-->
+	<!--[if lt IE 9 ]>
+		<script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+	<![endif]-->
 </body>
 </html>

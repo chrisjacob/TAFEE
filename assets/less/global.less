@@ -1,0 +1,17 @@
+/* global.less */
+
+body {
+	background-color: lighten(@color, 20%);
+}
+
+#mode {
+	content: @mode;
+}
+
+#mode-list li {
+	display: none;
+	
+	&.global {
+		display: block;
+	}
+}

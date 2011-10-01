@@ -13,16 +13,18 @@ http://paulirish.com/2011/tiered-adaptive-front-end-experiences/
 - [LESS.js](http://lesscss.org/) [[src](https://github.com/cloudhead/less.js)]
 - [CoffeeScript](http://jashkenas.github.com/coffee-script/) [[src](https://github.com/jashkenas/coffee-script)]
 - [jQuery](http://jquery.com/) [[src](https://github.com/jquery/jquery)]
-- [Golden Grid System](http://goldengridsystem.com/) [[src](https://github.com/jonikorpi/Golden-Grid-System)]
+- [The Goldilocks Approach](http://goldilocksapproach.com/) [[src]](https://github.com/designbyfront/The-Goldilocks-Approach)
 - [HTML5 Shim/IEPP](github.com/aFarkas/iepp/)
 - [Google Chrome Frame](http://code.google.com/chrome/chromeframe/)
 - [JSON2.js](https://github.com/douglascrockford/JSON-js/blob/master/json2.js)
 
 
 ## Under Consideration:
+- [imgSizer.js](http://unstoppablerobotninja.com/entry/fluid-images/)
 - [History.js](https://github.com/balupton/history.js/blob/master/README.md) [[src](https://github.com/balupton/history.js)] [[ajaxify gist](https://gist.github.com/854622)]
 - [Keymaster.js](http://madrobby.github.com/keymaster/) [[src](https://github.com/madrobby/keymaster)]
 - [Google Web Font loader](http://code.google.com/apis/webfonts/docs/webfont_loader.html)
+- [Golden Grid System](http://goldengridsystem.com/) [[src](https://github.com/jonikorpi/Golden-Grid-System)]
 
 
 ## HTML5:

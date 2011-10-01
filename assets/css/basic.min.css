@@ -1,0 +1,4 @@
+body{background-color:#66ff66;}
+#mode{content:'basic';}
+#mode-list li{display:none;}#mode-list li.global{display:block;}
+#mode-list li.basic{display:block;}
